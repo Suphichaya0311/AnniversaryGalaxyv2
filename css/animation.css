@@ -26,3 +26,30 @@ transform:translateY(0px);
 animation:float 5s ease infinite;
 
 }
+/* Zoom */
+
+body.zoom canvas{
+
+animation:zoomGalaxy 3s forwards;
+
+}
+
+@keyframes zoomGalaxy{
+
+0%{
+
+transform:scale(1);
+
+filter:blur(0px);
+
+}
+
+100%{
+
+transform:scale(8);
+
+filter:blur(10px);
+
+}
+
+}
