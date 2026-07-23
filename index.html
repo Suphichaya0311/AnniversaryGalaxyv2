@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,12 +8,17 @@
 
 <title>Our Galaxy ✨</title>
 
+<!-- Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 
+<!-- CSS -->
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/intro.css">
+<link rel="stylesheet" href="css/galaxy.css">
+<link rel="stylesheet" href="css/popup.css">
 <link rel="stylesheet" href="css/animation.css">
 <link rel="stylesheet" href="css/responsive.css">
 
@@ -22,36 +26,273 @@
 
 <body>
 
-<!-- Canvas Galaxy -->
-<canvas id="galaxy"></canvas>
+<!-- ========================= -->
+<!-- GALAXY BACKGROUND -->
+<!-- ========================= -->
 
-<!-- ดาวตก -->
-<div id="shooting-stars"></div>
+<canvas id="galaxyCanvas"></canvas>
 
-<!-- หมอก -->
-<div class="nebula"></div>
+<div id="nebulaLayer"></div>
 
-<!-- กล่องกลาง -->
-<div class="intro">
+<div id="starLayer"></div>
+
+<div id="shootingStarLayer"></div>
+
+<!-- ========================= -->
+<!-- INTRO -->
+<!-- ========================= -->
+
+<section id="intro">
+
+<div class="introGlass">
 
 <h2>Welcome To</h2>
 
 <h1>Our Galaxy ✨</h1>
 
 <p>
-Every memory becomes a star in our universe.
+
+Every memory becomes a star<br>
+in our own universe.
+
 </p>
 
-<button id="startBtn">
+<button id="enterGalaxy">
 
-Enter Our Galaxy
+Enter Our Galaxy 💜
 
 </button>
 
 </div>
 
-<script src="js/galaxy.js"></script>
+</section>
+
+<!-- ========================= -->
+<!-- MAIN GALAXY -->
+<!-- ========================= -->
+
+<section id="galaxyScene">
+
+<!-- ดาวความทรงจำ -->
+
+<div id="memoryContainer"></div>
+
+<!-- Story Book -->
+
+<div id="bookPlanet" class="planet">
+
+📖
+
+</div>
+
+<!-- Letter -->
+
+<div id="letterPlanet" class="planet">
+
+💌
+
+</div>
+
+<!-- Puzzle -->
+
+<div id="puzzlePlanet" class="planet">
+
+🧩
+
+</div>
+
+<!-- Timer -->
+
+<div id="timerPlanet" class="planet">
+
+🪐
+
+</div>
+
+<!-- Music -->
+
+<div id="musicPlanet" class="planet">
+
+🎵
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- MEMORY POPUP -->
+<!-- ========================= -->
+
+<div id="memoryPopup">
+
+<div class="popupCard">
+
+<span id="closePopup">
+
+×
+
+</span>
+
+<img
+id="memoryImage"
+src=""
+alt="memory">
+
+<h2 id="memoryTitle">
+
+Memory
+
+</h2>
+
+<p id="memoryText">
+
+Our beautiful memories...
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- LETTER -->
+<!-- ========================= -->
+
+<div id="letterPopup">
+
+<div class="letterPaper">
+
+<h2>
+
+To My Favorite Person 💜
+
+</h2>
+
+<p>
+
+ข้อความของออยจะมาอยู่ตรงนี้
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- BOOK -->
+<!-- ========================= -->
+
+<div id="bookPopup">
+
+<div class="book">
+
+<div class="page">
+
+Page 1
+
+</div>
+
+<div class="page">
+
+Page 2
+
+</div>
+
+<div class="page">
+
+Page 3
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- PUZZLE -->
+<!-- ========================= -->
+
+<div id="puzzlePopup">
+
+<div id="puzzleBoard"></div>
+
+</div>
+
+<!-- ========================= -->
+<!-- COUNTDOWN -->
+<!-- ========================= -->
+
+<div id="timerPopup">
+
+<h2>
+
+Together For
+
+</h2>
+
+<div id="countdown">
+
+00
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- ENDING -->
+<!-- ========================= -->
+
+<div id="endingScene">
+
+<canvas id="heartCanvas"></canvas>
+
+<h1>
+
+Thank You
+
+</h1>
+
+<p>
+
+For Being My Universe 💜
+
+</p>
+
+</div>
+
+<!-- ========================= -->
+<!-- MUSIC -->
+<!-- ========================= -->
+
+<audio
+id="bgMusic"
+loop>
+
+<source
+src="music/galaxy.mp3"
+type="audio/mp3">
+
+</audio>
+
+<!-- ========================= -->
+<!-- JS -->
+<!-- ========================= -->
+
 <script src="js/intro.js"></script>
+
+<script src="js/galaxy.js"></script>
+
+<script src="js/music.js"></script>
+
+<script src="js/popup.js"></script>
+
+<script src="js/memory.js"></script>
+
+<script src="js/puzzle.js"></script>
+
+<script src="js/timer.js"></script>
+
+<script src="js/ending.js"></script>
 
 </body>
 
