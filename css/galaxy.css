@@ -48,3 +48,22 @@ transition:.35s;
 transform:scale(1.8);
 
 }
+@keyframes pulseStar{
+
+  0%,100%{
+    transform:scale(1);
+    opacity:1;
+  }
+
+  50%{
+    transform:scale(1.6);
+    opacity:.7;
+  }
+
+}
+
+.memoryStar{
+
+  animation:pulseStar 2.8s ease-in-out infinite;
+
+}
